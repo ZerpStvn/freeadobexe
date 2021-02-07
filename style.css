@@ -1,0 +1,285 @@
+@import url("span.js");
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import "https://fonts.googleapis.com/css?family=Trirong";
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i');
+*
+{
+    padding: 0;
+    margin: 0;
+    user-select: none;
+    font-family: 'Roboto', sans-serif;
+}
+.Row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+[class*="scale-"]
+{
+  float: left;
+  /* padding: 15px;margin-left: 30px; */
+
+}
+[class*="scale-1"]
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;margin-left: 30px;
+  margin-top: 30px;
+}
+[class*="scale-2"]
+{
+
+  float: right;
+}
+.scale-0{width: 20.0%;}
+.scale-1{width: 50.0%;}
+.scale-2{width: 23.0%;}
+.scale-4{width: 100%;}
+
+@media only screen and (max-width: 768px )
+{
+    [class*="scale-"]{
+    width: 85%;
+    }
+}
+
+@media only screen and (max-width: 768px )
+{
+    [class*="scale-0"]{
+    width: 100%;
+    }
+}
+@media only screen and (max-width: 768px )
+{
+    [class*="scale-2"]{
+    width: 100%;
+    }
+}
+
+body
+{
+    background-color: #25274D;
+}
+.header{
+  position:relative;
+  overflow:hidden;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  height:50vw;
+  min-height:400px;
+  max-height:550px;
+  min-width:300px;
+  color:#eee;
+}
+.header:after{
+  content:"";
+  width:100%;
+  height:40%;
+  position:absolute;
+  bottom:0;
+  left:0;
+  z-index:-1;
+ background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(27,32,48,1) 100%);
+}
+.header:before{
+  content:"";
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+    -webkit-transform: translateZ(0) scale(1.0, 1.0);
+    transform: translateZ(0);
+  background:#1B2030 url(asset/sabbir-ahmed-01.jpg) top center no-repeat;
+  background-size:cover;
+  background-attachment:fixed;
+  animation: grow 60s  linear 10ms infinite;
+  transition:all 0.2s ease-in-out;
+  z-index:-2
+}
+.header a{
+  color:#eee
+}
+.logo{
+  border:2px solid #fff;
+  border-radius:3px;
+  text-decoration:none;
+  display:inline-block;
+  padding:5px 10px;
+  margin-top: 20px;
+  font-weight:600;
+  font-size:1.2em;
+  box-sizing:border-box
+}
+.sides, .info{
+  flex: 0 0 auto;
+  width:50%
+}
+.info{
+  width:100%;
+  padding:15% 10% 0 10%;
+  text-align:center;
+  text-shadow:0 2px 3px rgba(0,0,0,0.2)
+}
+.author{
+  display:inline-block;
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  background:url(http://favim.com/media/uploads/images/610/140308/black-n-white-cute-funny-iron-man-Favim.com-1462744.jpg) center no-repeat;
+  background-size:cover;
+  box-shadow:0 2px 3px rgba(0,0,0,0.3);
+  margin-bottom:3px
+}
+.info h4, .meta{
+  font-size:0.7em
+}
+.meta{
+  font-style:italic;
+}
+@keyframes grow{
+  0% { transform:scale(1)}
+  50% { transform:scale(1.2)}
+}
+.content{  
+  padding:5% 10%;
+  text-align:justify
+}
+ h2
+ {
+   padding-top:80px;
+   text-align: center;
+   font-size: 20px;
+   color: #1b20302a;
+ }
+
+.adsense
+{
+  height: 500px;
+  background-color: rgba(255, 255, 255, 0.205);
+}
+.adsense .section
+{
+  width: 100%;
+  height: 180px;
+  margin-top: 10px;
+  
+  /* background-color: rgba(255, 255, 255, 0.205); */
+}
+.advert .section
+{
+  width: 100%;
+  height: 100%;
+  margin-top: 10px;
+  background-color: rgba(255, 255, 255, 0.205);
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12)
+}
+.advert
+{
+  height: 200px;
+  /* background-color:rgba(255, 255, 255, 0.205); */
+}
+
+.conatianer .Content-Wrapper
+{
+    
+    height: 470px;
+    background-color:#6200ee;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12)
+}
+.Content-Wrapper span
+{
+    padding-top: 20.5px;
+    letter-spacing: 1.0;
+    padding-left: 10px;
+    font-size: 23.3px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+
+}
+button {
+    float: right;
+    overflow: hidden;
+    transition: background 400ms;
+    color: #24305E;
+    background-color: #A8D0E6;
+    padding: 1rem 2rem;
+    font-family: 'Roboto', sans-serif;
+    outline: 0;
+    border: 0;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3); /* black with 30% opacity */
+    cursor: pointer;
+  }
+  .ripple {
+    background-position: center;
+    transition: background 0.8s;
+  }
+  .ripple:hover {color: white;
+    background: #25274D radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+  }
+  .ripple:active {
+    background-color: #6eb9f7;
+    background-size: 100%;
+    transition: background 0s;
+  }
+img{
+    float: left;
+    width: 50px;
+    height: 50px;
+}
+.versions img
+{
+  width: 30px;
+  height: 30px;
+}
+.versions span
+{
+  padding-top: 5px;
+  font-size: 15px;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  height: 100%;
+}
+
+td, th {
+    border-bottom: 1px solid #24305E;
+    text-align: left;
+    padding: 8px;
+  }
+
+.tales a
+{
+  color: white;
+  text-decoration: none;
+}
+.tales a:hover
+{
+  color: lightblue;
+}
+.tales ul li 
+{
+  margin-left: 20px;
+  padding-top: 20px;
+  color:  white;
+}
